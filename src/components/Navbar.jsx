@@ -1,12 +1,16 @@
-import logo from "../src/assets/Crypto-Converter.png";
+import logo from "../assets/Crypto-Converter.png";
 
 function Navbar() {
   return (
-    <nav className="navbar">
-      <h2> <img src="src/assets/Crypto-Converter.png" alt="Logo" />
-  CryptoDash</h2>
+    <nav>
+      <div className="navbar-left">
+        <h2 className="brand">
+          <img src={logo} alt="Logo" className="logo" />
+          CryptoDash
+        </h2>
+      </div>
 
-      <ul>
+      <ul className="nav-links">
         <li>
           <a href="#hero">Home</a>
         </li>
