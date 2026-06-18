@@ -50,15 +50,78 @@ h2 {
   object-fit: contain;
 }
 
-.navbar ul {
+.navbar ul,
+.navbar .nav-links {
   display: flex;
   list-style: none;
   gap: 25px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 .navbar a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
   color: inherit;
   text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 999px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.light .navbar a {
+  color: #111827;
+}
+
+.light .navbar a:hover {
+  background: rgba(17, 24, 39, 0.08);
+}
+
+.dark .navbar a {
+  color: #ffffff;
+}
+
+.dark .navbar a:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+button {
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
+
+.light button {
+  background: #111827;
+  color: #f8fafc;
+}
+
+.dark button {
+  background: #f8fafc;
+  color: #111827;
+}
+
+.hero button {
+  background: #2563eb;
+  color: white;
+}
+
+.light .hero button {
+  background: #2563eb;
+  color: white;
+}
+
+.dark .hero button {
+  background: #60a5fa;
+  color: #0f172a;
 }
 
 /* Theme Button */
@@ -140,6 +203,7 @@ h2 {
 
 .stat-card {
   background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
 
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
@@ -147,6 +211,18 @@ h2 {
   padding: 25px;
   border-radius: 20px;
   text-align: center;
+}
+
+.light .stat-card {
+  background: rgba(15,23,42,0.12);
+  border: 1px solid rgba(15,23,42,0.18);
+  color: #111827;
+}
+
+.dark .stat-card {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+  color: inherit;
 }
 
 .stat-card h3 {
@@ -161,12 +237,25 @@ h2 {
   margin: 40px auto;
 
   background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
 
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
 
   padding: 30px;
   border-radius: 20px;
+}
+
+.light .converter-card {
+  background: rgba(255,255,255,0.92);
+  border: 1px solid rgba(15,23,42,0.18);
+  color: #111827;
+}
+
+.dark .converter-card {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+  color: inherit;
 }
 
 .converter-card h2 {
@@ -181,6 +270,20 @@ h2 {
   margin-bottom: 15px;
   border: none;
   border-radius: 10px;
+}
+
+.light .converter-card select,
+.light .converter-card input {
+  background: #ffffff;
+  color: #111827;
+  border: 1px solid rgba(15,23,42,0.16);
+}
+
+.dark .converter-card select,
+.dark .converter-card input {
+  background: rgba(255,255,255,0.08);
+  color: white;
+  border: 1px solid rgba(255,255,255,0.12);
 }
 
 .result {
@@ -213,6 +316,7 @@ h2 {
 
 .coin-card {
   background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
 
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
@@ -222,6 +326,18 @@ h2 {
   text-align: center;
 
   transition: 0.3s;
+}
+
+.light .coin-card {
+  background: rgba(15,23,42,0.08);
+  border: 1px solid rgba(15,23,42,0.14);
+  color: #111827;
+}
+
+.dark .coin-card {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+  color: inherit;
 }
 
 .coin-card:hover {
