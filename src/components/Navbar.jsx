@@ -2,7 +2,7 @@ import logo from "../assets/Crypto-Converter.png";
 
 function Navbar() {
   return (
-    <nav>
+    <nav className="navbar">
       <div className="navbar-left">
         <h2 className="brand">
           <img src={logo} alt="Logo" className="logo" />
