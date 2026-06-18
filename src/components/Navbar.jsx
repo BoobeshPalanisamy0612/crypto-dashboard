@@ -1,7 +1,7 @@
 function Navbar() {
   return (
     <nav className="navbar">
-      <h2>🚀 CryptoDash</h2>
+      <h2> <img src="src/assets/Crypto-Converter.png" alt="CryptoDash Logo" className="logo" />CryptoDash</h2>
 
       <ul>
         <li>

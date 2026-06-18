@@ -24,7 +24,7 @@ function TrendingCoins() {
       id="trending"
       className="trending"
     >
-      <h2>🔥 Trending Coins</h2>
+      <h2> Trending Coins</h2>
 
       <div className="coin-grid">
         {coins.map((coin) => (
